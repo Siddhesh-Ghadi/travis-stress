@@ -1,0 +1,11 @@
+arch: ppc64le
+dist: bionic
+
+sudo: required
+
+addons:
+  apt: stress-ng
+
+script:
+  - arch
+  - stress-ng --version
