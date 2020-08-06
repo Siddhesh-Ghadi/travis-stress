@@ -9,3 +9,5 @@ addons:
 script:
   - arch
   - stress-ng --version
+  - sudo stress-ng --timeout 30s --vm 1G &
+  - watch -d uptime
